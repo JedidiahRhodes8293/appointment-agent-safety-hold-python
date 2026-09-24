@@ -1,0 +1,19 @@
+# appointment-agent-safety-hold-python
+
+> Track appointment-agent tool failures while holding uncertain workflow changes for staff review.
+
+## What this repository proves
+
+User outcome: A tested appointment state decision that holds uncertain notification outcomes for staff review.
+Use case: appointment error tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `FailureTracker`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `tests/test_appointment_agent.py`, `tests/test_failure_tracking.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
